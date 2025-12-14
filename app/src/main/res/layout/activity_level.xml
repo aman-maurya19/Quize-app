@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".LevelActivity">
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="🔥 Quiz Time 🔥\n\Learn Something New Every Day"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp" />
+
+
+
+        <TextView
+            android:id="@+id/txtSelectLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Difficulty Level"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBeginner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beginner"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:layout_marginBottom="25dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:backgroundTint="#43A047"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Medium"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:backgroundTint="#C5AE4B"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:textSize="24sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:backgroundTint="#EF7A77"
+            android:textColor="@color/black"/>
+
+
+
+
+
+
+</LinearLayout>
+
