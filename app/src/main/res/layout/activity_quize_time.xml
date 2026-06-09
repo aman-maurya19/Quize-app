@@ -8,6 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".Quize_time">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1E88E5"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/app_name" />
+
     <TextView
         android:id="@+id/quiz_title"
         android:layout_width="match_parent"
@@ -18,10 +26,7 @@
         android:textStyle="bold"
         android:textColor="#1E88E5"
         android:textSize="22sp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:layout_marginTop="20dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

@@ -1,15 +1,18 @@
 package aman.first.quizapp
 
 import android.graphics.drawable.Drawable
-import android.os.Bundle
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
 import android.os.CountDownTimer
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ProgressBar
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.google.android.material.button.MaterialButton
-import kotlin.arrayOf
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,6 +45,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
         tvQuestion = findViewById(R.id.Question_text)
         tvOption1 = findViewById(R.id.textView1)
@@ -1245,5 +1251,22 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         timer?.cancel()
         super.onDestroy()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_privacy_policy -> {
+                val intent = Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.google.com/search?q=privacy+policy"))
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }

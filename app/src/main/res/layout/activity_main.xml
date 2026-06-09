@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1E88E5"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/app_name" />
+
     <TextView
         android:id="@+id/quiz_title"
         android:layout_width="match_parent"
@@ -16,7 +24,7 @@
         android:text="🔥 Quiz Time 🔥\n\Learn Something New Every Day"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:textColor="#1E88E5"
         android:textSize="22sp" />
 
@@ -99,7 +107,6 @@
         android:layout_marginTop="10dp"
         android:text="Option 3"
         android:textSize="16sp">
-
     </TextView>
 
     <TextView
@@ -110,8 +117,6 @@
         android:layout_marginTop="10dp"
         android:text="Option 4"
         android:textSize="16sp">
-
-
     </TextView>
         </LinearLayout>
 

@@ -27,8 +27,7 @@ class TitleAdopter(
         val item = titleList[position]
 
         holder.titleText.text = item.subject
-        holder.titleImage.setImageResource(item.image)   // ⬅️ drawable se image set
-
+        holder.titleImage.setImageResource(item.image)
         holder.itemView.setOnClickListener {
             onItemClick(item)
         }
