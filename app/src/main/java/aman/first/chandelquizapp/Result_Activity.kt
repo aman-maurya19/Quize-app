@@ -1,4 +1,4 @@
-package aman.first.quizapp
+package aman.first.chandelquizapp
 
 import android.os.Bundle
 import android.widget.TextView

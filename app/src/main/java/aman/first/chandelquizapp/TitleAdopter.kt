@@ -1,4 +1,4 @@
-package aman.first.quizapp
+package aman.first.chandelquizapp
 
 import android.view.LayoutInflater
 import android.view.View

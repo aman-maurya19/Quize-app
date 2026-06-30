@@ -1,4 +1,4 @@
-package aman.first.quizapp
+package aman.first.chandelquizapp
 
 import android.content.Intent
 import android.os.Bundle

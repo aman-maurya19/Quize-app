@@ -1,4 +1,4 @@
-package aman.first.quizapp
+package aman.first.chandelquizapp
 
 import android.graphics.drawable.Drawable
 import android.content.Intent
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
         nextBtn.setOnClickListener {
             if (!answerSelected) {
-                Toast.makeText(this@MainActivity, "Please select an option first!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Please select an option first!",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             nextQuestion()
@@ -1262,7 +1262,7 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_privacy_policy -> {
                 val intent = Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://www.google.com/search?q=privacy+policy"))
+                    Uri.parse("https://sites.google.com/view/chandel-quiz-app"))
                 startActivity(intent)
                 true
             }

@@ -1,4 +1,4 @@
-package aman.first.quizapp
+package aman.first.chandelquizapp
 
 data class Title(
     val subject: String,
